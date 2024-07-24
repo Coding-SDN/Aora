@@ -1,6 +1,6 @@
 import { FlatList, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { SearchInput } from "../../components";
+import { EmptyState, SearchInput } from "../../components";
 
 const Bookmark = () => {
   return (
@@ -15,7 +15,7 @@ const Bookmark = () => {
         ListEmptyComponent={() => (
           <EmptyState
             title="No Videos Found"
-            subtitle="No videos created yet"
+            subtitle="No videos saved yet"
           />
         )}
       />

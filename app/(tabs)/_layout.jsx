@@ -26,7 +26,7 @@ const TabIcon = ({ icon, color, name, focused }) => {
 };
 
 const TabLayout = () => {
-
+  
   return (
     <>
       <Tabs
@@ -36,9 +36,19 @@ const TabLayout = () => {
           tabBarShowLabel: false,
           tabBarStyle: {
             backgroundColor: "#161622",
-            borderTopWidth: 1,
+            borderTopWidth: .2,
             borderTopColor: "#232533",
-            height: 84,
+            height: 78,
+            position: "absolute",
+            bottom: 25,
+            marginHorizontal: 15,
+            paddingVertical: 15,
+            borderRadius: 15,
+            borderCurve: "continuous",
+            shadowColor: "black",
+            shadowOffset: { width: 0, height: 10 },
+            shadowRadius: 10,
+            shadowOpacity: 0.3,
           },
         }}
       >
@@ -106,7 +116,7 @@ const TabLayout = () => {
       </Tabs>
 
       {/* <Loader isLoading={loading} /> */}
-      <StatusBar backgroundColor="#161622" style="light" />
+      {/* <StatusBar backgroundColor="#161622" style="light" /> */}
     </>
   );
 };

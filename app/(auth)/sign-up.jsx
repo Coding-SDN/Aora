@@ -75,7 +75,7 @@ const SignUp = () => {
 
           <FormField
             title="Password"
-            placeholder={"Create a password (at least 8 charact..."}
+            placeholder={"Create a password (at least 8 char..."}
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-7"

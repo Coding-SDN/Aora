@@ -67,12 +67,12 @@ const Profile = () => {
               titleStyles="text-lg"
             />
 
-            <View className="mt-5 flex flex-row">
+            <View className="mt-5 flex flex-row items-center justify-center">
               <InfoBox
                 title={posts.length || 0}
                 subtitle="Posts"
                 titleStyles="text-xl"
-                containerStyles="mr-10"
+                // containerStyles="mr-10"
               />
               {/* <InfoBox
                 title="#!$^"
