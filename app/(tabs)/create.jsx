@@ -91,7 +91,7 @@ const Create = () => {
 
   return (
     <SafeAreaView className="bg-primary h-full">
-      <ScrollView className="px-4 my-6">
+      <ScrollView className="px-4 mt-6 mb-[100px]">
         <Text className="text-2xl text-white font-psemibold">Upload Video</Text>
 
         <FormField
@@ -162,7 +162,7 @@ const Create = () => {
         <FormField
           title="AI Prompt"
           value={form.prompt}
-          placeholder="The AI prompt of your video...."
+          placeholder="The AI prompt of your video..."
           handleChangeText={(e) => setForm({ ...form, prompt: e })}
           otherStyles="mt-7"
         />

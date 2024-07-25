@@ -26,10 +26,7 @@ const TabIcon = ({ icon, color, name, focused }) => {
 };
 
 const TabLayout = () => {
-  const { loading, isLogged } = useGlobalContext();
-
-  if (!loading && !isLogged) return <Redirect href="/sign-in" />;
-
+  
   return (
     <>
       <Tabs
@@ -40,8 +37,7 @@ const TabLayout = () => {
           tabBarStyle: {
             backgroundColor: "#161622",
             borderTopWidth: .2,
-            borderTopColor: "#161622",
-            // borderTopColor: "#232533",
+            borderTopColor: "#232533",
             height: 78,
             position: "absolute",
             bottom: 25,
@@ -119,8 +115,8 @@ const TabLayout = () => {
         />
       </Tabs>
 
-      <Loader isLoading={loading} />
-      <StatusBar backgroundColor="#161622" style="light" />
+      {/* <Loader isLoading={loading} /> */}
+      {/* <StatusBar backgroundColor="#161622" style="light" /> */}
     </>
   );
 };
