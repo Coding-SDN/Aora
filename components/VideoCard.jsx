@@ -11,7 +11,7 @@ const VideoCard = ({ title, creator, avatar, thumbnail, video }) => {
     <View className="flex flex-col items-center px-4 mb-14">
       <View className="flex flex-row gap-3 items-start">
         <View className="flex justify-center items-center flex-row flex-1">
-          <View className="w-[46px] h-[46px] rounded-lg border border-secondary flex justify-center items-center p-0.5">
+          <View className="w-[46px] h-[46px] rounded-lg border-x-[1.5px] border-y-[1.5px] border-secondary flex justify-center items-center">
             <Image
               source={{ uri: avatar }}
               className="w-full h-full rounded-lg"

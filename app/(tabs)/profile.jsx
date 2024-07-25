@@ -53,10 +53,10 @@ const Profile = () => {
               />
             </TouchableOpacity>
 
-            <View className="w-16 h-16 border border-secondary rounded-lg flex justify-center items-center">
+            <View className="w-16 h-16 border-x-[2.7px] border-y-[2.7px] border-secondary rounded-lg flex justify-center items-center">
               <Image
                 source={{ uri: user?.avatar }}
-                className="w-[90%] h-[90%] rounded-lg outline-none"
+                className="w-[100%] h-[100%] rounded-lg"
                 resizeMode="cover"
               />
             </View>
