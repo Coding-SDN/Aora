@@ -14,6 +14,7 @@ const SearchInput = ({ initialQuery }) => {
         className="text-base mt-0.5 text-white flex-1 font-pregular"
         value={query}
         placeholder="Search a video topic"
+        returnKeyType="search"
         placeholderTextColor="#CDCDE0"
         onChangeText={(e) => setQuery(e)}
       />
