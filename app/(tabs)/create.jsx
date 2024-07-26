@@ -73,7 +73,7 @@ const Create = () => {
         userId: user.$id,
       });
 
-      Alert.alert("Success", "Post uploaded successfully");
+      Alert.alert("Success", "Post uploaded successfully (Your video will be displayed in few minutes)");
       router.push("/home");
     } catch (error) {
       Alert.alert("Error", error.message);
